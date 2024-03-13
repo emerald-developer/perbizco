@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <title>Perbizco Travels</title>
+  </head>
+  <body>
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+    <script src="src/client.js" type="module"></script>
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 absolute top-0 left-0 lg:h-16 h-20">
+      <div class="navbar-start p-2">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0,0,256,256"
+            >
+              <g transform="">
+                <g
+                  fill="#ffffff"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Taxi</a></li>
+            <li><a href="#">Book a Taxi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a
+          class="btn btn-ghost text-primary lg:text-xl text-4xl font-black"
+          href="#"
+          >Perbizco Travels</a
+        >
+      </div>
+      <div class="navbar-end p-2">
+        <a href="#booking-form" class="btn btn-primary min-h-9 h-4 w-[7rem]">
+          Book a taxi
+        </a>
+      </div>
+    </div>
+
+    <!-- HERO SECTION 1 -->
+    <div class="hero min-h-screen" style="background-image: url(/Taxi.png)">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-2xl">
+          <h1 class="mb-5 text-6xl lg:text-3xl font-bold">
+            Hello there welcome to
+            <p class="text-primary">Perbizco Travels</p>
+          </h1>
+          <p class="mb-5 lg:text-lg text-2xl">
+            Consistently demonstrating exceptional driving abilities,
+            professionalism, and a strong commitment to customer service.
+          </p>
+          <div>
+            <a href="#booking-form" class="btn btn-primary mr-4">Book a taxi</a>
+            <a href="#contact-us" class="btn btn-secondary">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About SECTION 2 -->
+    <div class="min-w-screen text-2xl p-20 lg:text-lg lg:p-7 lg:min-h-screen">
+      <p class="text-green-400 font-extrabold">//About</p>
+      <p class="text-3xl font-bold">Why should you choose Perbizco Travels?</p>
+      <p>
+        Welcome to Perbizco Travels ! We are a professional Taxi service
+        provider located in Kozhikode. At Perbizco Travels , we are dedicated to
+        delivering top-notch Taxi service with unwavering commitment to
+        excellence, ensuring our customers receive the utmost satisfaction.
+        Contact Santhosh Kumar at +919447383673 Number or Perbizco@gmail.com to
+        discover how we can help you. Lets embark on a delightful journey
+        together with Perbizco Travels!
+      </p>
+      <p class="text-3xl font-bold my-4 mt-8">Our Car:</p>
+
+      <div class="card lg:card-side bg-zinc-800 shadow-xl p-8">
+        <figure>
+          <img src="/Tata-bolt.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-4xl font-black">Tata Bolt Hatchback</h2>
+          <p>Air Conditioner : Yes</p>
+          <p>Capacity : 5 seats</p>
+          <p>Initial Charge : ₹ 2500 upto 80km</p>
+          <p>Charge per km (after 80km): ₹ 18/km</p>
+          <div class="card-actions justify-end">
+            <a class="btn btn-primary" href="#booking-form">Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero bg-base-200 p-20">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="text-center lg:text-left">
+          <h1 class="text-5xl font-bold">Book a taxi now!</h1>
+        </div>
+        <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <form class="card-body p-4" id="booking-form">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="name"
+                class="input input-bordered"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Phone no</span>
+              </label>
+              <input
+                type="number"
+                placeholder="phone no"
+                class="input input-bordered"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Starting point</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Starting point"
+                class="input input-bordered"
+                name="startingPoint"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Destination</span>
+              </label>
+              <input
+                type="text"
+                placeholder="destination"
+                class="input input-bordered"
+                name="destination"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="email"
+                class="input input-bordered"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Date and time</span>
+              </label>
+              <input
+                type="datetime-local"
+                placeholder="dd/mm/yyyy,time"
+                class="input input-bordered"
+                name="dateTime"
+                required
+              />
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary">Book now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="footer items-center p-8 bg-gray-900 text-neutral-content"
+      id="contact-us"
+    >
+      <p class="text-3xl font-black">Contact us on:</p>
+      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <a href="https://wa.me/919447383673"
+          ><img class="w-12 h-12" src="/whatsapp.svg"
+        /></a>
+        <a href="santhoshnechuli@gmail.com"
+          ><img class="w-12 h-12" src="/email.svg"
+        /></a>
+      </nav>
+    </footer>
+  </body>
+</html>
